@@ -32,8 +32,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Add Made with heart tag
-        run: |
-          sed -i '' -e '/<\/body>/i\<p style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);">Made with heart 💜</p>' index.html
+        run: >
+          sed -i '' -e '/<\/body>/i\<p style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);">Made with heart 💜</p>' index.html"
       - name: Setup Pages
         uses: actions/configure-pages@v3
       - name: Upload artifact
