@@ -31,8 +31,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-      - name: Echo index.html
-        run: echo index.html
+      - name: cat index.html
+        run: cat index.html
       - name: Add Made with heart tag
         run: >
           sed -i '' -e '/<\/body>/i\<p style="position: absolute; bottom: 0; left: 50%; transform: translateX(-50%);">Made with heart 💜</p>' index.html"
